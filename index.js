@@ -30,7 +30,7 @@ app.listen(app.get('port'), function() {
 })
 
 
-// API End Point - added by Stefan
+// API End Point 
 
 app.post('/webhook/', function (req, res) {
     messaging_events = req.body.entry[0].messaging
@@ -56,7 +56,7 @@ app.post('/webhook/', function (req, res) {
 
 var token = "Enter Your Token Here"
 
-// function to echo back messages - added by Stefan
+// function to echo back messages
 
 function sendTextMessage(sender, text) {
     messageData = {
