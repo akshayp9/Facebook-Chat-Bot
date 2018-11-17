@@ -43,7 +43,7 @@ app.post('/webhook/', function (req, res) {
                 sendGenericMessage(sender)
                 continue
             }
-            sendTextMessage(sender, "parrot: " + text.substring(0, 200))
+            sendTextMessage(sender, "Digi Says: " + text.substring(0, 200))
         }
         if (event.postback) {
             text = JSON.stringify(event.postback)
@@ -54,7 +54,7 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-var token = "EAAD5yn7T6ykBABQZAZBEXSF6vJEeSaveSEcQ9izLguqfVRHPVkC3GDJdjw2p2WM2MBC6ZBZCsxj8X7hinLVZADqeCJLc7xbwQRteieqOoLrZBr18Q7gcUVJCMdajHghixQjdyAZB4XwkShJNteU2gBVWgwOZC4ZA1eYUqs35wBK8wBAZDZD"
+var token = "Enter Your Token Here"
 
 // function to echo back messages - added by Stefan
 
